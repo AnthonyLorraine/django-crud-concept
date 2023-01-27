@@ -1,4 +1,4 @@
-
+# this is for a django application, I am using the django templates to render out the views.
 # I have a base protected view for each Class based view (Create, List, Update & Delete)
 
 def request_user_passes_base_protected_view_test(view: View):
