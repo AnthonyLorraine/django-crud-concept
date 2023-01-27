@@ -63,5 +63,5 @@ SettingTypeListView, SettingTypeCreateView, SettingTypeUpdateView, SettingTypeDe
                                                                                                                        SettingTypeCreateModelForm,
                                                                                                                        'setting_type-list')
 
-# repeat as needed
+# repeat as needed, in my case, almost 5 times in the initial build, but I would like to manage more features in future
 
