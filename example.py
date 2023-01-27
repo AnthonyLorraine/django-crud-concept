@@ -7,7 +7,7 @@ def request_user_passes_base_protected_view_test(view: View):
 
 # The below are the base views
 class BaseProtectedListView(UserPassesTestMixin, LoginRequiredMixin, ListView):
-    template_name = 'access/object_list.html'
+    template_name = 'template/object_list.html'
 
     def test_func(self):
         return request_user_passes_base_protected_view_test(self)
@@ -18,20 +18,20 @@ class BaseProtectedListView(UserPassesTestMixin, LoginRequiredMixin, ListView):
         return context
 
 class BaseProtectedCreateView(UserPassesTestMixin, LoginRequiredMixin, CreateView):
-    template_name = 'access/settings_object_form.html'
+    template_name = 'template/settings_object_form.html'
 
     def test_func(self):
         return request_user_passes_base_protected_view_test(self)
 
 class BaseProtectedUpdateView(UserPassesTestMixin, LoginRequiredMixin, UpdateView):
-    template_name = 'access/settings_object_form.html'
+    template_name = 'template/settings_object_form.html'
 
     def test_func(self):
         return request_user_passes_base_protected_view_test(self)
 
 
 class BaseProtectedDeleteView(UserPassesTestMixin, LoginRequiredMixin, DeleteView):
-    template_name = 'access/settings_confirm_delete.html'
+    template_name = 'template/settings_confirm_delete.html'
 
     def test_func(self):
         return request_user_passes_base_protected_view_test(self)
